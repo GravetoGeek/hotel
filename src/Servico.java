@@ -1,5 +1,5 @@
 public class Servico {
-
+	private String idServico = Integer.toString(BancoDeDados.servicos.size()+1);
 	private double valorServico;
 	private String descricao;
 
@@ -18,4 +18,22 @@ public class Servico {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
+	public String getIdServico() {
+		return idServico;
+	}
+
+	/*public void setIdServico() {
+		this.idServico = Integer.toString(BancoDeDados.servicos.size()+1);
+	}*/
+	
+
+	@Override
+	public String toString() {
+		return "Servico [idServico=" + idServico + ", valorServico=" + valorServico + ", descricao=" + descricao + "]";
+	}
+
+
+	
+	
 }

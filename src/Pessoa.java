@@ -65,7 +65,12 @@ public class Pessoa {
 		this.email = email;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", cpf=" + cpf + ", dataNasc=" + dataNasc + ", endereço=" + endereço
+				+ ", estado=" + estado + ", cidade=" + cidade + ", pais=" + pais + ", telefone=" + telefone + ", email="
+				+ email + "]";
+	}
 
 	
 }

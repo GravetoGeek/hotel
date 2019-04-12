@@ -2,6 +2,7 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 public class Reserva {
+	private String cpf;
 	private Date dataEntrada;
 	private Date dataSaida;
 	private int qtdAcompanhantes;
@@ -24,6 +25,12 @@ public class Reserva {
 	}
 	public void setQtdAcompanhantes(int qtdAcompanhantes) {
 		this.qtdAcompanhantes = qtdAcompanhantes;
+	}
+	public String getCpf() {
+		return this.cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 	
 }
